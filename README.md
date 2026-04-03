@@ -58,3 +58,12 @@ Logs are saved locally to `bot.log` in the application root in a structured form
 - The Base URL is explicitly configured to `https://testnet.binancefuture.com` using the `python-binance` testnet arguments.
 - Users are placing USDT-M futures orders.
 - Stop-Loss or Take-Profit orders are not configured by default in this minimal CLI setup but framework supports scaling to handles those based on Binance API.
+## 📸 Sample Output
+
+Below are sample outputs demonstrating successful order execution on Binance Futures Testnet.
+
+### LIMIT Order
+![Limit](screenshots/limit.png)
+
+### MARKET Order
+![Market](screenshots/market.png)
