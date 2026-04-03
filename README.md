@@ -67,3 +67,17 @@ Below are sample outputs demonstrating successful order execution on Binance Fut
 
 ### MARKET Order
 ![Market](screenshots/market.png)
+
+## 🏗️ Architecture
+
+- client.py → Handles Binance API communication
+- orders.py → Contains order execution logic
+- validators.py → Validates user inputs
+- logging_config.py → Configures logging
+- cli.py → Entry point for CLI commands
+
+## ⚠️ Error Handling
+
+- Handles invalid inputs
+- Handles API exceptions
+- Handles network failures
