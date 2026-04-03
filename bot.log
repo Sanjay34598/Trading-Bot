@@ -1,184 +1,6 @@
-2026-04-03 13:55:01,543 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.01 price=None
-2026-04-03 13:55:01,547 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 13:55:02,022 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
-2026-04-03 13:55:02,022 - binance_bot - ERROR - Unexpected error occurred: API Secret required for private endpoints
-Traceback (most recent call last):
-  File "C:\Users\PK\OneDrive\Desktop\Binance task\bot\orders.py", line 48, in create_order
-    response = client.futures_create_order(**params)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
-    return self._request_futures_api('post', 'order', True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
-    return self._request(method, uri, signed, True, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 356, in _request
-    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
-    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 268, in _generate_signature
-    return sig_func(query_string)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
-    assert self.API_SECRET, "API Secret required for private endpoints"
-AssertionError: API Secret required for private endpoints
-2026-04-03 13:55:32,923 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.01 price=None
-2026-04-03 13:55:32,924 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 13:55:33,408 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
-2026-04-03 13:55:33,408 - binance_bot - ERROR - Unexpected error occurred: API Secret required for private endpoints
-Traceback (most recent call last):
-  File "C:\Users\PK\OneDrive\Desktop\Binance task\bot\orders.py", line 48, in create_order
-    response = client.futures_create_order(**params)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
-    return self._request_futures_api('post', 'order', True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
-    return self._request(method, uri, signed, True, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 356, in _request
-    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
-    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 268, in _generate_signature
-    return sig_func(query_string)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
-    assert self.API_SECRET, "API Secret required for private endpoints"
-AssertionError: API Secret required for private endpoints
-2026-04-03 14:54:34,111 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.01 price=None
-2026-04-03 14:54:34,115 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 14:54:34,359 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
-2026-04-03 14:54:34,363 - binance_bot - INFO - MOCK_BINANCE is True: Simulating successful API response.
-2026-04-03 14:54:34,364 - binance_bot - INFO - Successful order response: {'orderId': 1775208274364, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'mocked_id', 'price': '0', 'avgPrice': '90000', 'origQty': '0.01', 'executedQty': '0.01', 'cumQuote': '0', 'type': 'MARKET', 'side': 'BUY', 'updateTime': 1775208274364}
-2026-04-03 14:54:48,035 - binance_bot - INFO - Received order request: BTCUSDT SELL LIMIT qty=0.01 price=95000.0
-2026-04-03 14:54:48,038 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 14:54:48,303 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'timeInForce': 'GTC', 'price': 95000.0}
-2026-04-03 14:54:48,304 - binance_bot - INFO - MOCK_BINANCE is True: Simulating successful API response.
-2026-04-03 14:54:48,305 - binance_bot - INFO - Successful order response: {'orderId': 1775208288305, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'mocked_id', 'price': '95000.0', 'avgPrice': '0.00000', 'origQty': '0.01', 'executedQty': '0', 'cumQuote': '0', 'type': 'LIMIT', 'side': 'SELL', 'updateTime': 1775208288305}
-2026-04-03 15:02:33,756 - binance_bot - INFO - Running prediction analysis for BTCUSDT...
-2026-04-03 15:06:45,048 - binance_bot - INFO - Running prediction analysis for BTCUSDT...
-2026-04-03 15:06:48,355 - binance_bot - INFO - Running prediction analysis for ETHUSDT...
-2026-04-03 15:06:51,119 - binance_bot - INFO - Running prediction analysis for SOLUSDT...
-2026-04-03 15:07:12,488 - binance_bot - INFO - Received order request: ETHUSDT BUY MARKET qty=0.5 price=None
-2026-04-03 15:07:12,490 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 15:07:12,928 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.5}
-2026-04-03 15:07:12,928 - binance_bot - INFO - MOCK_BINANCE is True: Simulating successful API response.
-2026-04-03 15:07:12,928 - binance_bot - INFO - Successful order response: {'orderId': 1775209032928, 'symbol': 'ETHUSDT', 'status': 'FILLED', 'clientOrderId': 'mocked_id', 'price': '0', 'avgPrice': '90000', 'origQty': '0.5', 'executedQty': '0.5', 'cumQuote': '0', 'type': 'MARKET', 'side': 'BUY', 'updateTime': 1775209032928}
-2026-04-03 15:07:32,369 - binance_bot - INFO - Running prediction analysis for BTCUSDT...
-2026-04-03 15:09:54,628 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.001 price=None
-2026-04-03 15:09:54,629 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 15:09:54,858 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
-2026-04-03 15:09:54,858 - binance_bot - ERROR - Unexpected error occurred: API Secret required for private endpoints
-Traceback (most recent call last):
-  File "C:\Users\PK\OneDrive\Desktop\Binance task\bot\orders.py", line 67, in create_order
-    response = client.futures_create_order(**params)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
-    return self._request_futures_api('post', 'order', True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
-    return self._request(method, uri, signed, True, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 356, in _request
-    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
-    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 268, in _generate_signature
-    return sig_func(query_string)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
-    assert self.API_SECRET, "API Secret required for private endpoints"
-AssertionError: API Secret required for private endpoints
-2026-04-03 15:24:16,556 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.001 price=None
-2026-04-03 15:24:16,558 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 15:24:16,809 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
-2026-04-03 15:24:16,810 - binance_bot - ERROR - Unexpected error occurred: API Secret required for private endpoints
-Traceback (most recent call last):
-  File "C:\Users\PK\OneDrive\Desktop\Binance task\bot\orders.py", line 67, in create_order
-    response = client.futures_create_order(**params)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
-    return self._request_futures_api('post', 'order', True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
-    return self._request(method, uri, signed, True, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 356, in _request
-    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
-    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 268, in _generate_signature
-    return sig_func(query_string)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
-    assert self.API_SECRET, "API Secret required for private endpoints"
-AssertionError: API Secret required for private endpoints
-2026-04-03 15:24:39,319 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.001 price=None
-2026-04-03 15:24:39,320 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 15:24:39,733 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
-2026-04-03 15:24:39,733 - binance_bot - ERROR - Unexpected error occurred: API Secret required for private endpoints
-Traceback (most recent call last):
-  File "C:\Users\PK\OneDrive\Desktop\Binance task\bot\orders.py", line 67, in create_order
-    response = client.futures_create_order(**params)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
-    return self._request_futures_api('post', 'order', True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
-    return self._request(method, uri, signed, True, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 356, in _request
-    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
-    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 268, in _generate_signature
-    return sig_func(query_string)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
-    assert self.API_SECRET, "API Secret required for private endpoints"
-AssertionError: API Secret required for private endpoints
-2026-04-03 15:26:12,071 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.001 price=None
-2026-04-03 15:26:12,073 - binance_bot - ERROR - API keys missing. Order will fail if authorization is required.
-2026-04-03 15:26:12,534 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
-2026-04-03 15:26:12,534 - binance_bot - ERROR - Unexpected error occurred: API Secret required for private endpoints
-Traceback (most recent call last):
-  File "C:\Users\PK\OneDrive\Desktop\Binance task\bot\orders.py", line 67, in create_order
-    response = client.futures_create_order(**params)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
-    return self._request_futures_api('post', 'order', True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
-    return self._request(method, uri, signed, True, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 356, in _request
-    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
-    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
-                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 268, in _generate_signature
-    return sig_func(query_string)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PK\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
-    assert self.API_SECRET, "API Secret required for private endpoints"
-AssertionError: API Secret required for private endpoints
 2026-04-03 15:27:25,103 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.001 price=None
-2026-04-03 15:27:25,103 - binance_bot - ERROR - API keys missing, cannot submit live order.
 2026-04-03 15:30:15,505 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.001 price=None
 2026-04-03 15:30:15,720 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
-2026-04-03 15:30:17,734 - binance_bot - ERROR - Binance API Exception: Status=400, Message=Order's notional must be no smaller than 100 (unless you choose reduce only).
 2026-04-03 15:31:40,189 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.01 price=None
 2026-04-03 15:31:40,672 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
 2026-04-03 15:31:40,928 - binance_bot - INFO - Successful order response: {'orderId': 13020091469, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'rKJT2h0CuLkxfLodIfGNed', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1775210502807}
@@ -191,7 +13,12 @@ AssertionError: API Secret required for private endpoints
 2026-04-03 15:32:14,589 - binance_bot - INFO - Successful order response: {'orderId': 13020091760, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'KU47UF6t9tLJtsY1Z1EC0p', 'price': '95000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1775210536507}
 2026-04-03 15:33:34,068 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.001 price=None
 2026-04-03 15:33:34,269 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
-2026-04-03 15:33:34,523 - binance_bot - ERROR - Binance API Exception: Status=400, Message=Order's notional must be no smaller than 100 (unless you choose reduce only).
 2026-04-03 15:35:04,955 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.002 price=None
 2026-04-03 15:35:05,414 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
 2026-04-03 15:35:05,723 - binance_bot - INFO - Successful order response: {'orderId': 13020093408, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'G9N3hTEfalBuXydGAVNJYA', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0020', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1775210707619}
+2026-04-03 15:57:10,554 - binance_bot - INFO - Received order request: BTCUSDT SELL LIMIT qty=0.01 price=95000.0
+2026-04-03 15:57:11,049 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'timeInForce': 'GTC', 'price': 95000.0}
+2026-04-03 15:57:11,452 - binance_bot - INFO - Successful order response: {'orderId': 13020105005, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'X3FbqWViQvpc8TWjiyBA9w', 'price': '95000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1775212033351}
+2026-04-03 16:01:19,520 - binance_bot - INFO - Received order request: BTCUSDT BUY MARKET qty=0.002 price=None
+2026-04-03 16:01:19,798 - binance_bot - INFO - Sending API request to Futures testnet with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-04-03 16:01:20,094 - binance_bot - INFO - Successful order response: {'orderId': 13020107834, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ENXc8YzGu085GUNrJXJzl1', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0020', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1775212282015}
